@@ -1,0 +1,30 @@
+.topCategories {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 35px 0px 0px 0px;
+  max-width: 1310px;
+}
+.topCategories h3 {
+  font-size: 30px;
+  margin-left: 10px;
+}
+.topCategories img {
+  display: block;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  margin-bottom: 10px;
+}
+.topCategories img:hover {
+  transform: scale(1.05);
+}
+.topCategories .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.topCategories .card {
+  margin-bottom: 10px;
+}
+.topCategories .row b{
+  font-size: 18px;
+}
