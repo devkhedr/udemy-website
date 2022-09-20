@@ -1,0 +1,70 @@
+.courses {
+  padding: 2% 3%;
+  width: 90%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  padding: 10px;
+  font-size: 150%;
+}
+
+.description {
+  padding-left: 10px;
+  width: 70%;
+  font-size: 100%;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 15px;
+  margin: 1%;
+  background-color: white;
+  font-weight: bold;
+}
+
+.button:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
+.coursesTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 2px 0px 0px 0px;
+  font-size: 17px;
+}
+
+.coursesTabs input {
+  display: none;
+  color: black;
+}
+
+.coursesTabs label {
+  display: inline-block;
+  font-weight: 600;
+  color: rgb(153, 153, 153);
+}
+
+.coursesTabs input:checked + label {
+  color: black;
+  font-weight: 600;
+}
+
+.coursesTabs input:hover + label {
+  color: black;
+  cursor: pointer;
+  transform: scale(1.08);
+  font-weight: 600;
+}

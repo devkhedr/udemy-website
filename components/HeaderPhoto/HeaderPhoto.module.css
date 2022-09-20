@@ -1,0 +1,85 @@
+.pageHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+}
+.page-child {
+  display: flex;
+  flex-direction: column;
+}
+.pageHeader img {
+  max-width: 100%;
+}
+
+.pageHeader .text {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  padding: 15px 0px 0px 25px;
+  margin: 50px 50px 0px 0px;
+  border: 0px solid white;
+  background-color: white;
+  max-width: 350px;
+  box-shadow: 10px 10px 10px 0px rgb(155, 154, 154);
+}
+
+.pageHeader h1 {
+  font-size: 28px;
+  margin: 10px 10px 0px 0px;
+}
+.pageHeader p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1290px) {
+  .pageHeader .text {
+    top: 30px;
+    left: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .pageHeader .text {
+    left: 70px;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .pageHeader .text {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    box-shadow: none;
+    margin: 0;
+    padding: 20px 0px 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .pageHeader p {
+    font-size: 22px;
+  }
+
+  .pageHeader h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .pageHeader h1 {
+    font-size: 30px;
+  }
+
+  .pageHeader p {
+    display: inline;
+  }
+}
