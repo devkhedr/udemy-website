@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import { createContext, useState, useEffect } from "react";
 import axios from "axios";
@@ -53,6 +53,7 @@ function App() {
               <setSearchValueContext.Provider value={setSearchValue}>
                 <Navbar />
                 <Routes>
+                  <Route path="*" element={<Navigate to="/" />} />
                   <Route path="/" exact element={<Home />}></Route>
                   <Route
                     path="/course-info/:id"
