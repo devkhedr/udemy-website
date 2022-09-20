@@ -1,92 +1,91 @@
-.nav{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    width: 100%;
-    background-color: white;
-    color: #1c1d1f;
-    z-index: 2;
+.nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  color: #1c1d1f;
+  z-index: 2;
 }
 
-.buttonContanier{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 3px;
-    padding: 10px;
+.buttonContanier {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3px;
+  padding: 10px;
 }
 
-.data{
-    display: none;
+.data {
+  display: none;
 }
 
-.button{
-    width: 90%;
-    padding: 10px;
-    background-color: #1c1d1f;
-    color: white;
-    font-weight: bold;
-    border: none;
-    white-space: nowrap;
+.button {
+  width: 90%;
+  padding: 10px;
+  background-color: #1c1d1f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  white-space: nowrap;
 }
 
-.price{
-    display: inline-block;
-    font-size: 120%;
-    font-weight: bold;
-    padding: 10px;
+.price {
+  display: inline-block;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 10px;
 }
 
-.gold{
-    color: goldenrod;
+.gold {
+  color: goldenrod;
 }
 
-.link{
-    color: #cec0fc;
+.link {
+  color: #cec0fc;
 }
 
-.link:hover{
-    color: #cec0fc;
+.link:hover {
+  color: #cec0fc;
 }
 
-.link:visited{
-    color: #cec0fc;
+.link:visited {
+  color: #cec0fc;
 }
 
 @media screen and (min-width: 701px) {
-    .nav{
-        background-color: #1c1d1f;
-        color: white;
-    }
+  .nav {
+    background-color: #1c1d1f;
+    color: white;
+  }
 
-    .data{
-        padding: 10px;
-        display: inline-block;
-        width: 70%;
-    }
+  .data {
+    padding: 10px;
+    display: inline-block;
+    width: 70%;
+  }
 
-    .buttonContanier{
-        width: 30%;
-    }
+  .buttonContanier {
+    width: 30%;
+  }
 
-    .button{
-        background-color: white;
-        color: #1c1d1f;
-        padding: 10px;
-    }
+  .button {
+    background-color: white;
+    color: #1c1d1f;
+    padding: 10px;
+  }
 }
 
-@media screen and (min-width: 1081px){
-    .buttonContanier{
-        display: none;
-    }
+@media screen and (min-width: 1081px) {
+  .buttonContanier {
+    display: none;
+  }
 
-    .nav{
-        position: sticky;
-        left: 0;
-        top: 0;
-    }
+  .nav {
+    position: sticky;
+    left: 0;
+    top: 0;
+  }
 }
-

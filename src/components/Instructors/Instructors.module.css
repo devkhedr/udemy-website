@@ -1,18 +1,18 @@
-.section{
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.section {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.heading{
-    font-weight: bold;
-    margin-bottom: 20px;
+.heading {
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1081px) {
-    .section{
-        width: 45%;
-        margin-left: 17%;
-    }
+  .section {
+    width: 45%;
+    margin-left: 17%;
+  }
 }

@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 function Footer() {
   return (
     <footer>
-    <div className={styles.row}>
+      <div className={styles.row}>
         <div>
           <a>Udemy Busness</a>
           <a>Teach on Udemy</a>
@@ -26,7 +26,8 @@ function Footer() {
           <a>Sitemap</a>
           <a>Accessbility statements</a>
         </div>
-        <div></div> <div></div><div></div>
+        <div></div> <div></div>
+        <div></div>
         <div>
           <button>
             <i className="fa fa-globe"></i>
@@ -35,7 +36,7 @@ function Footer() {
           </button>
         </div>
       </div>
-    <div className={styles.row}>
+      <div className={styles.row}>
         <div>
           <a href="/">
             <img src={require("../../assets/logo/Udemy_logo2.png")} />

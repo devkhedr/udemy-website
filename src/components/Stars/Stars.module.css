@@ -1,24 +1,24 @@
 .starsouter {
-    display: inline-block;
-    position: relative;
-    font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
 }
 
 .starsouter::before {
-    content: "\f006 \f006 \f006 \f006 \f006";
-    color: goldenrod;
+  content: "\f006 \f006 \f006 \f006 \f006";
+  color: goldenrod;
 }
 
 .starsinner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
 }
 
 .starsinner::before {
-    content: "\f005 \f005 \f005 \f005 \f005";
-    color: goldenrod;
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: goldenrod;
 }

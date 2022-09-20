@@ -1,16 +1,16 @@
-import React from 'react'
-import HeaderPhoto from '../components/HeaderPhoto/HeaderPhoto';
-import CoursesSection from '../components/CoursesSection/CoursesSection';
-import TopCategories from "../components/TopCategories/TopCategories"
+import React from "react";
+import HeaderPhoto from "../components/HeaderPhoto/HeaderPhoto";
+import CoursesSection from "../components/CoursesSection/CoursesSection";
+import TopCategories from "../components/TopCategories/TopCategories";
 
 function Home() {
-    return (
-        <>
-            <HeaderPhoto/>
-            <CoursesSection/>
-            <TopCategories/>
-        </>
-    )
+  return (
+    <>
+      <HeaderPhoto />
+      <CoursesSection />
+      <TopCategories />
+    </>
+  );
 }
 
-export default Home
+export default Home;

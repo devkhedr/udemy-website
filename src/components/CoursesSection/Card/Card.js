@@ -1,10 +1,10 @@
-import React from 'react'
-import Popover from '@mui/material/Popover';
-import Stars from '../../Stars/Stars';
-import styles from './Card.module.css'
-import { Link } from 'react-router-dom';
+import React from "react";
+import Popover from "@mui/material/Popover";
+import Stars from "../../Stars/Stars";
+import styles from "./Card.module.css";
+import { Link } from "react-router-dom";
 
-function Card({course}) {
+function Card({ course }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handlePopoverOpen = (event) => {
@@ -19,46 +19,48 @@ function Card({course}) {
 
   let instructor = "";
 
-  for(const inst in course.instructors)
-    instructor += course.instructors[inst].name + ', ';
-  
+  for (const inst in course.instructors)
+    instructor += course.instructors[inst].name + ", ";
+
   instructor = instructor.slice(0, -2);
-  
+
   return (
     <Link className={styles.recommend} to={`/course-info/${course.id}`}>
-      <div className={styles.course} aria-owns={open ? 'mouse-over-popover' : undefined}
+      <div
+        className={styles.course}
+        aria-owns={open ? "mouse-over-popover" : undefined}
         aria-haspopup="true"
         onMouseEnter={handlePopoverOpen}
-        onMouseLeave={handlePopoverClose}>
-        
-        <img  src={course.image}/>
+        onMouseLeave={handlePopoverClose}
+      >
+        <img src={course.image} />
         <h6>{course.title}</h6>
         <p className={styles.instructor}>{instructor}</p>
         <span className={styles.rate}>{course.rating.toFixed(2)} </span>
-        <Stars rate={course.rate}/>
+        <Stars rate={course.rate} />
         <div>${course.price}</div>
       </div>
       <Popover
         id="mouse-over-popover"
         sx={{
-          pointerEvents: 'none',
+          pointerEvents: "none",
         }}
         open={open}
         anchorEl={anchorEl}
         anchorOrigin={{
-          vertical: 'center',
-          horizontal: 'right',
+          vertical: "center",
+          horizontal: "right",
         }}
         transformOrigin={{
-          vertical: 'center',
-          horizontal: 'left',
+          vertical: "center",
+          horizontal: "left",
         }}
         PaperProps={{
           onMouseEnter: handlePopoverOpen,
           onMouseLeave: handlePopoverClose,
           sx: {
-              pointerEvents: 'auto'
-          }
+            pointerEvents: "auto",
+          },
         }}
         onClose={handlePopoverClose}
         disableRestoreFocus
@@ -67,17 +69,36 @@ function Card({course}) {
         <div sx={{ p: 1 }} className={styles.popover}>
           <h6>{course.title}</h6>
           <p className={styles.update}>Updated September 2019</p>
-          <p className={styles.details}>21 total hours . All Levels . Subtitles</p>
+          <p className={styles.details}>
+            21 total hours . All Levels . Subtitles
+          </p>
           <p>{course.headline}</p>
-          <div className={styles.list}><span className={styles.check}><i className="fa-solid fa-check"></i></span><span>Create fully functional Python programs </span></div>
-          <div className={styles.list}><span className={styles.check}><i className="fa-solid fa-check"></i></span><span>To learn the python language</span></div>
-          <div className={styles.list}><span className={styles.check}><i className="fa-solid fa-check"></i></span><span>Become an experienced Python Programmer</span></div>
+          <div className={styles.list}>
+            <span className={styles.check}>
+              <i className="fa-solid fa-check"></i>
+            </span>
+            <span>Create fully functional Python programs </span>
+          </div>
+          <div className={styles.list}>
+            <span className={styles.check}>
+              <i className="fa-solid fa-check"></i>
+            </span>
+            <span>To learn the python language</span>
+          </div>
+          <div className={styles.list}>
+            <span className={styles.check}>
+              <i className="fa-solid fa-check"></i>
+            </span>
+            <span>Become an experienced Python Programmer</span>
+          </div>
           <button className={styles.add}> Add to cart</button>
-          <button className={styles.love}><i class="fa-regular fa-heart fa-2x"></i></button>
+          <button className={styles.love}>
+            <i class="fa-regular fa-heart fa-2x"></i>
+          </button>
         </div>
       </Popover>
     </Link>
-  )
+  );
 }
 
-export default Card
+export default Card;

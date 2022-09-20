@@ -1,126 +1,126 @@
-.card{
-    display: none;
-    position: absolute;
-    margin-left: 65%;
-    margin-right: auto;
-    width: 22%;
-    border: solid 1px rgb(235, 234, 234);
-    background-color: white;
-    color: black;
-    font-size: 90%;
-    top: 40px;
+.card {
+  display: none;
+  position: absolute;
+  margin-left: 65%;
+  margin-right: auto;
+  width: 22%;
+  border: solid 1px rgb(235, 234, 234);
+  background-color: white;
+  color: black;
+  font-size: 90%;
+  top: 40px;
 }
 
-.image{
-    width: 100%;
+.image {
+  width: 100%;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
-.price{
-    padding-top: 20px;
-    margin: 0 20px;
-    font-weight: bold;
+.price {
+  padding-top: 20px;
+  margin: 0 20px;
+  font-weight: bold;
 }
 
-.add{
-    margin: 0 20px;
-    padding: 10px;
-    font-weight: bold;
-    background-color: rgb(161, 6, 161);
-    color: white;
-    border: solid 1px transparent;
+.add {
+  margin: 0 20px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: rgb(161, 6, 161);
+  color: white;
+  border: solid 1px transparent;
 }
 
-.add:hover{
-    background-color: rgb(127, 7, 127);
+.add:hover {
+  background-color: rgb(127, 7, 127);
 }
 
-.buy{
-    margin: 0 20px;
-    padding: 10px;
-    font-weight: bold;
-    background-color: transparent;
-    border: solid 1px #1c1d1f;
+.buy {
+  margin: 0 20px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: transparent;
+  border: solid 1px #1c1d1f;
 }
 
-.buy:hover{
-    background-color: whitesmoke;
+.buy:hover {
+  background-color: whitesmoke;
 }
 
-.back{
-    text-align: center;
-    font-size: 80%;
-    color: #1c1d1f;
+.back {
+  text-align: center;
+  font-size: 80%;
+  color: #1c1d1f;
 }
 
-.head{
-    margin: 0 20px;
-    margin-top: -20px;
-    padding: 10px;
-    font-weight: bold;
+.head {
+  margin: 0 20px;
+  margin-top: -20px;
+  padding: 10px;
+  font-weight: bold;
 }
 
-.data{
-    display: flex;
-    align-items: center;
-    margin: 0 20px;
-    padding: 0 10px;
-    gap: 15px;
-    margin-top: -5px;
+.data {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  padding: 0 10px;
+  gap: 15px;
+  margin-top: -5px;
 }
 
-.additionalLinks{
-    margin: 0 15px;
-    padding: 0 10px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    font-size: 80%;
-    margin-bottom: -10px;
-    margin-top: 5px;
-    gap: 10px;
-    white-space: nowrap;
+.additionalLinks {
+  margin: 0 15px;
+  padding: 0 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  font-size: 80%;
+  margin-bottom: -10px;
+  margin-top: 5px;
+  gap: 10px;
+  white-space: nowrap;
 }
 
-.additionalLinks > a{
-    color: #1c1d1f;
+.additionalLinks > a {
+  color: #1c1d1f;
 }
 
-.additionalLinks > a:hover{
-    color: #1c1d1f;
+.additionalLinks > a:hover {
+  color: #1c1d1f;
 }
 
-.additionalLinks > a:visited{
-    color: #1c1d1f;
+.additionalLinks > a:visited {
+  color: #1c1d1f;
 }
 
-.para{
-    margin: 0 20px;
-    padding: 0 10px;
-    margin-top: -10px;
-    font-size: 90%;
+.para {
+  margin: 0 20px;
+  padding: 0 10px;
+  margin-top: -10px;
+  font-size: 90%;
 }
 
-.try{
-    margin: 0 20px;
-    padding: 10px;
-    margin-bottom: 30px;
-    font-weight: bold;
-    background-color: transparent;
-    border: solid 1px #1c1d1f; 
+.try {
+  margin: 0 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  border: solid 1px #1c1d1f;
 }
 
-.try:hover{
-    background-color: whitesmoke;
+.try:hover {
+  background-color: whitesmoke;
 }
 
 @media screen and (min-width: 1081px) {
-    .card{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
