@@ -1,9 +1,9 @@
 import React from "react";
-import "./Footer.css";
+import styles from "./Footer.module.css";
 function Footer() {
   return (
     <footer>
-      <div className="row">
+    <div className={styles.row}>
         <div>
           <a>Udemy Busness</a>
           <a>Teach on Udemy</a>
@@ -35,9 +35,9 @@ function Footer() {
           </button>
         </div>
       </div>
-      <div className="row">
+    <div className={styles.row}>
         <div>
-          <a href="index.html">
+          <a href="/">
             <img src={require("../../assets/logo/Udemy_logo2.png")} />
           </a>
         </div>

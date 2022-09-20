@@ -1,0 +1,112 @@
+.recommend{
+    display: flex;
+    width: 99%;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+.recommend:hover{
+    opacity: 0.85;
+}
+
+.recommend:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.course{
+    width: 100%;
+    align-items: center;
+    margin: 5px;
+}
+
+.recommend img{
+    height: 140px;
+  width: 230px;
+  border: 0.1rem solid rgb(207, 207, 207);
+}
+
+.instructor{
+    color: rgb(83, 83, 83);
+    font-size: 90%;
+    margin-top: -5px;
+    margin-bottom: -1px;
+}
+
+.rate{
+    font-size: 12px;
+  color: rgb(185, 158, 0);
+  font-weight: bolder;
+}
+
+.popover{
+    width: 300px;
+    padding: 20px;
+    font-size: 90%;
+}
+
+.update{
+    font-size: 90%;
+    padding-left: 1px;
+    color: rgb(3, 71, 3);
+    font-weight: bold;
+}
+
+.details{
+    color: rgb(110, 110, 110);
+    font-size: 90%;
+    margin-top: -10px;
+}
+
+.check{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.list{
+    margin-bottom: 10px;
+}
+
+.add{
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: rgb(161, 6, 161);
+    color: white;
+    font-size: 110%;
+    font-weight: bold;
+    border: solid 1px transparent;
+}
+
+.add:hover{
+    background-color: rgb(127, 7, 127);
+}
+
+.love{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border: solid 1px black;
+    background: transparent;
+    border-radius: 500px;
+}
+
+@media screen and (min-width: 550px) {
+    .recommend{
+        width: calc(100%/2 - 1%);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .recommend{
+        width: calc(100%/3 - 1%);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .recommend{
+        width: calc(100%/4 - 1%);
+    }
+}
