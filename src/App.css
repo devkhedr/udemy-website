@@ -1,9 +1,12 @@
 body {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   max-width: 100%;
+  padding: 0;
+  justify-content: space-around;
 }
 
 a {

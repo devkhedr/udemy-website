@@ -1,10 +1,10 @@
 import React from 'react'
-import "./HeaderPhoto.css"
+import styles from "./HeaderPhoto.module.css"
 function HeaderPhoto() {
   return (
-    <div class="pageHeader">
+    <div className={styles.pageHeader}>
           <img src={require('../../assets/header/header-photo.jpg')} />
-          <div class="text">
+          <div className={styles.text}>
             <h1>Learning that gets you</h1>
             <p>
               Skills for your present (and your future). Get started with us.

@@ -1,0 +1,33 @@
+.listitem {
+  border: 1px solid #e8eaec;
+  display: flex;
+}
+
+.left {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.leftData {
+  display: inline-block;
+}
+
+.right {
+  width: 50%;
+  display: none;
+}
+
+@media screen and (min-width: 601px) {
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .left {
+    width: 50%;
+  }
+}

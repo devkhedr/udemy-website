@@ -1,0 +1,51 @@
+.section {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.aboveContent {
+  font-size: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.info {
+  color: #1c1d1f;
+}
+
+.button {
+  background-color: transparent;
+  border: transparent;
+  color: #5624d0;
+  font-weight: bold;
+}
+
+.showmore {
+  width: 100%;
+  padding: 10px;
+  color: #1c1d1f;
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid #1c1d1f;
+}
+
+.showmore:hover {
+  background-color: whitesmoke;
+}
+
+@media screen and (min-width: 1081px) {
+  .section {
+    width: 45%;
+    margin-left: 17%;
+  }
+}
